@@ -1,0 +1,36 @@
+{
+  "n1": {
+    "model": [],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 3,
+    "op": "",
+    "input_shape": "220 220 3",
+    "interval": "0.03"
+  },
+  "n2": {
+    "model": [
+      "alexnet_original_1_conv",
+      "alexnet_original_2_conv"
+    ],
+    "devices": [
+      "n3"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "alexnet_original_3_conv",
+      "alexnet_original_4_conv",
+      "alexnet_original_5_conv"
+    ],
+    "devices": [],
+    "merge": 1,
+    "split": 0,
+    "op": ""
+  }
+}
