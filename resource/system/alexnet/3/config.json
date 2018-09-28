@@ -13,9 +13,7 @@
   "n2": {
     "model": [
       "alexnet_original_1_conv",
-      "max_pooling2d_1",
-      "alexnet_original_2_conv",
-      "max_pooling2d_2"
+      "max_pooling2d_1"
     ],
     "devices": [
       "n3"
@@ -26,6 +24,8 @@
   },
   "n3": {
     "model": [
+      "alexnet_original_2_conv",
+      "max_pooling2d_2",
       "alexnet_original_3_conv",
       "alexnet_original_4_conv",
       "alexnet_original_5_conv"
