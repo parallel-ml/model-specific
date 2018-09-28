@@ -2,7 +2,7 @@ import time
 import os
 from multiprocessing import Queue
 from threading import Thread
-from system.queue import Queue as queue_wrapper
+from queue import Queue as queue_wrapper
 from collections import deque
 import socket
 import yaml

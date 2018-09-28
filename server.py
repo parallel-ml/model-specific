@@ -9,7 +9,7 @@ from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 from SocketServer import ThreadingMixIn
 import avro.ipc as ipc
 import avro.protocol as protocol
-from system.node import Node
+from node import Node
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
