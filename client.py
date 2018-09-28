@@ -5,17 +5,13 @@
     for the response from the last layer.
 """
 import time
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-from SocketServer import ThreadingMixIn
 import threading
 from threading import Thread
 import os
 import signal
-from collections import deque
 
 import avro.ipc as ipc
 import avro.protocol as protocol
-import avro.schema as schema
 import numpy as np
 
 from initial import Initializer
