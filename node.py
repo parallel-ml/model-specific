@@ -147,11 +147,9 @@ class Node:
             seq = self.input.dequeue(self.merge)
 
             if self.op == 'cat':
-                # X = np.concatenate(seq, axis=-1)
-                X = np.random.random_sample(self.sample_output_shape)
+                X = np.concatenate(seq, axis=-1)
             elif self.op == 'add':
-                # X = np.sum(seq, axis=0)
-                X = np.random.random_sample(self.sample_output_shape)
+                X = np.sum(seq, axis=0)
             else:
                 X = seq[0]
 
@@ -164,7 +162,7 @@ class Node:
             self.frame_count += 1
             self.prediction_time += time.time() - start
 
-            if self.frame_count == 10:
+            if self.frame_count == 30:
                 self.stats()
 
     def receive(self, msg, req):

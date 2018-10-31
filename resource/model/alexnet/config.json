@@ -27,7 +27,7 @@
       "activity_regularizer": null
     },
     "input_shape": [
-      2048
+      4096
     ]
   },
   "dense_2": {
