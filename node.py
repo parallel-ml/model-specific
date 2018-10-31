@@ -117,7 +117,7 @@ class Node:
         self.total_time = 0.0
         self.prepare_data = 0.0
         self.prediction_time = 0.0
-        self.input = queue_wrapper()
+        self.input = queue_wrapper(size=30)
         self.ip = Queue()
         self.id = ''
         self.debug = False
