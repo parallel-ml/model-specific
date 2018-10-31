@@ -81,7 +81,7 @@ class Node:
 
                 # The model config is predefined. Extract each layer's config
                 # according to the config from system config.
-                with open(DIR_PATH + '/resource/model/' + sys_model_name+ '/' + sys_node_count + '/config.json') as f2:
+                with open(DIR_PATH + '/resource/model/' + sys_model_name + '/config.json') as f2:
                     model_config = yaml.safe_load(f2)
                     for layer_name in system_config['model']:
                         class_name = model_config[layer_name]['class_name']
