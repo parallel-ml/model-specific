@@ -1,0 +1,86 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2", "n3"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "220 220 3",
+    "interval": "0.03"
+  },
+  "n2": {
+    "model": [
+      "alexnet_original_1_conv",
+      "max_pooling2d_1",
+      "alexnet_original_2_conv",
+      "max_pooling2d_2",
+      "alexnet_original_3_conv",
+      "alexnet_original_4_conv",
+      "alexnet_original_5_conv",
+      "max_pooling2d_3"
+    ],
+    "devices": [
+      "n4", "n5"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "alexnet_original_1_conv",
+      "max_pooling2d_1",
+      "alexnet_original_2_conv",
+      "max_pooling2d_2",
+      "alexnet_original_3_conv",
+      "alexnet_original_4_conv",
+      "alexnet_original_5_conv",
+      "max_pooling2d_3"
+    ],
+    "devices": [
+      "n4", "n5"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n4": {
+    "model": [
+      "flatten_1",
+      "dense_1"
+    ],
+    "devices": [
+      "n5"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n5": {
+    "model": [
+      "flatten_1",
+      "dense_2"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n6": {
+    "model": [
+      "dense_3"
+    ],
+    "devices": [
+      "n1"
+    ],
+    "merge": 2,
+    "split": 0,
+    "op": "cat"
+  },
+
+}
