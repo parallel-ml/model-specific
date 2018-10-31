@@ -104,9 +104,6 @@ class Node:
                 cls.instance.merge = system_config['merge']
                 cls.instance.split = system_config['split']
                 cls.instance.op = system_config['op']
-                if cls.instance.op == 'cat' or cls.instance.op == 'add':
-                    cls.instance.sample_output_shape = (
-                        [int(entry) for entry in system_config['sample_output_shape'].split(' ')])
 
                 if cls.instance.model:
                     shape = list(model.input_shape[1:])
