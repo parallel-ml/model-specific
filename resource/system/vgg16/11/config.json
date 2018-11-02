@@ -1,0 +1,251 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "220 220 3",
+    "interval": "0.06"
+  },
+  "n2": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n4": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n5": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n6": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n7": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n8": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1",
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4",
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n9",
+      "n10"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n9": {
+    "model": [
+      "flatten",
+      "dense_1"
+    ],
+    "devices": [
+      "n11"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n10": {
+    "model": [
+      "flatten",
+      "dense_2"
+    ],
+    "devices": [
+      "n11"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n11": {
+    "model": [
+      "dense_4"
+    ],
+    "devices": [
+    ],
+    "merge": 2,
+    "split": 0,
+    "op": "cat"
+  }
+}

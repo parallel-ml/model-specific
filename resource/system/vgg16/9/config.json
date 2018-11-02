@@ -1,0 +1,138 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "220 220 3",
+    "interval": "0.06"
+  },
+  "n2": {
+    "model": [
+      "vgg16_original_1_conv",
+      "vgg16_original_2_conv",
+      "max_pooling2d_1"
+    ],
+    "devices": [
+      "n3", "n4", "n5"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n4": {
+    "model": [
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n5": {
+    "model": [
+      "vgg16_original_3_conv",
+      "vgg16_original_4_conv",
+      "max_pooling2d_2",
+      "vgg16_original_5_conv",
+      "vgg16_original_6_conv",
+      "vgg16_original_7_conv",
+      "max_pooling2d_3",
+      "vgg16_original_8_conv",
+      "vgg16_original_9_conv",
+      "vgg16_original_10_conv",
+      "max_pooling2d_4"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n6": {
+    "model": [
+      "vgg16_original_11_conv",
+      "vgg16_original_12_conv",
+      "vgg16_original_13_conv",
+      "max_pooling2d_5"
+    ],
+    "devices": [
+      "n7", "n8"
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n7": {
+    "model": [
+      "flatten",
+      "dense_1"
+    ],
+    "devices": [
+      "n9"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n8": {
+    "model": [
+      "flatten",
+      "dense_2"
+    ],
+    "devices": [
+      "n9"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n9": {
+    "model": [
+      "dense_4"
+    ],
+    "devices": [
+    ],
+    "merge": 2,
+    "split": 0,
+    "op": "cat"
+  }
+}
