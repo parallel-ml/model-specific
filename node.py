@@ -117,7 +117,7 @@ class Node:
         self.total_time = 0.0
         self.prepare_data = 0.0
         self.prediction_time = 0.0
-        self.input = queue_wrapper(size=60)
+        self.input = queue_wrapper(size=10)
         self.ip = Queue()
         self.id = ''
         self.debug = False
@@ -161,6 +161,7 @@ class Node:
 
                 if self.frame_count == 30:
                     self.stats()
+                    self.run = False
 
     def receive(self, msg, req):
         start = time.time()
