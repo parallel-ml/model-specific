@@ -73,7 +73,8 @@
   },
   "n6": {
     "model": [
-      "dense_3"
+      "dense_3",
+      "dense_5"
     ],
     "devices": [
       "n1"
