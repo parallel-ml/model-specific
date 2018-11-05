@@ -161,7 +161,6 @@ class Node:
 
                 if self.frame_count == 30:
                     self.stats()
-                    self.run = False
 
     def receive(self, msg, req):
         start = time.time()
