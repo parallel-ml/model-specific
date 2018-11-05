@@ -101,8 +101,8 @@ class Node:
                     ip = node_config.get('Node IP', n_id, 0)
                     cls.instance.ip.put(ip)
 
-                cls.instance.merge = system_config['merge']
-                cls.instance.split = system_config['split']
+                cls.instance.merge = int(system_config['merge'])
+                cls.instance.split = int(system_config['split'])
                 cls.instance.op = system_config['op']
 
                 if cls.instance.model:
@@ -156,11 +156,11 @@ class Node:
                     for _ in range(self.split):
                         Thread(target=self.send, args=(output,)).start()
 
-            self.frame_count += 1
-            self.prediction_time += time.time() - start
+                self.frame_count += 1
+                self.prediction_time += time.time() - start
 
-            if self.frame_count == 30:
-                self.stats()
+                if self.frame_count == 30:
+                    self.stats()
 
     def receive(self, msg, req):
         start = time.time()

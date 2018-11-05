@@ -77,11 +77,9 @@
       "dense_5"
     ],
     "devices": [
-      "n1"
     ],
     "merge": 2,
     "split": 0,
     "op": "cat"
-  },
-
+  }
 }
