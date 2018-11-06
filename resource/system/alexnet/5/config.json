@@ -55,8 +55,6 @@
   },
   "n5": {
     "model": [
-      "dense_3",
-      "dense_5"
     ],
     "devices": [
     ],
