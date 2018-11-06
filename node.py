@@ -162,8 +162,8 @@ class Node:
                 self.frame_count += 1
                 self.prediction_time += time.time() - start
 
-                if self.frame_count == 30:
-                    self.stats()
+            if self.frame_count == 30:
+                self.stats()
 
     def receive(self, msg, req):
         start = time.time()
