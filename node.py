@@ -159,8 +159,8 @@ class Node:
                     for _ in range(self.split):
                         Thread(target=self.send, args=(output,)).start()
 
-                self.frame_count += 1
-                self.prediction_time += time.time() - start
+            self.frame_count += 1
+            self.prediction_time += time.time() - start
 
             if self.frame_count == 30:
                 self.stats()
