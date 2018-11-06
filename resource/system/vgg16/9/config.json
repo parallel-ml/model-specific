@@ -127,7 +127,8 @@
   },
   "n9": {
     "model": [
-      "dense_4"
+      "dense_4",
+      "dense_5"
     ],
     "devices": [
     ],
