@@ -150,6 +150,9 @@ class Node:
             else:
                 X = seq[0]
 
+            self.prepare_data += time.time() - start
+            start = time.time()
+
             if X is not None and self.model is not None:
                 with self.graph.as_default():
                     output = self.model.predict(np.array([X]))
