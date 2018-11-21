@@ -156,8 +156,13 @@ class Node:
             if X is not None and self.model is not None:
                 with self.graph.as_default():
                     output = self.model.predict(np.array([X]))
-                    for _ in range(self.split):
-                        Thread(target=self.send, args=(output,)).start()
+                    if self.op == 'split':
+                        outputs = np.split(output, self.split, axis=1)
+                        for i in range(self.split):
+                            Thread(target=self.send, args=(outputs[i],)).start()
+                    else:
+                        for _ in range(self.split):
+                            Thread(target=self.send, args=(output,)).start()
 
             self.frame_count += 1
             self.prediction_time += time.time() - start

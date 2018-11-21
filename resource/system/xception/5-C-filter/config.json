@@ -8,31 +8,23 @@
     "merge": 1,
     "split": 1,
     "op": "",
-    "input_shape": "220 220 3",
-    "interval": "0.03"
+    "input_shape": "28 28 256",
+    "interval": "0.06"
   },
   "n2": {
     "model": [
-      "alexnet_original_1_conv",
-      "max_pooling2d_1",
-      "alexnet_original_2_conv",
-      "max_pooling2d_2",
-      "alexnet_original_3_conv",
-      "alexnet_original_4_conv",
-      "alexnet_original_5_conv",
-      "max_pooling2d_3"
+      "conv2d_1"
     ],
     "devices": [
       "n3", "n4"
     ],
     "merge": 1,
     "split": 2,
-    "op": ""
+    "op": "split"
   },
   "n3": {
     "model": [
-      "flatten_1",
-      "dense_1"
+      "conv2d_4"
     ],
     "devices": [
       "n5"
@@ -43,8 +35,7 @@
   },
   "n4": {
     "model": [
-      "flatten_1",
-      "dense_2"
+      "conv2d_4"
     ],
     "devices": [
       "n5"
@@ -55,13 +46,11 @@
   },
   "n5": {
     "model": [
-      "dense_3",
-      "dense_5"
     ],
     "devices": [
     ],
     "merge": 2,
     "split": 0,
-    "op": "cat"
+    "op": "add"
   }
 }

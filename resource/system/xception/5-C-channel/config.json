@@ -13,8 +13,10 @@
   },
   "n2": {
     "model": [
+      "conv2d_1"
     ],
     "devices": [
+      "n3", "n4"
     ],
     "merge": 1,
     "split": 2,
@@ -22,8 +24,10 @@
   },
   "n3": {
     "model": [
+      "conv2d_2"
     ],
     "devices": [
+      "n5"
     ],
     "merge": 1,
     "split": 1,
@@ -31,8 +35,10 @@
   },
   "n4": {
     "model": [
+      "conv2d_2"
     ],
     "devices": [
+      "n5"
     ],
     "merge": 1,
     "split": 1,
