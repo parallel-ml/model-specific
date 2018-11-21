@@ -1,0 +1,50 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "28 28 256",
+    "interval": "0.06"
+  },
+  "n2": {
+    "model": [
+    ],
+    "devices": [
+    ],
+    "merge": 1,
+    "split": 2,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+    ],
+    "devices": [
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n4": {
+    "model": [
+    ],
+    "devices": [
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n5": {
+    "model": [
+    ],
+    "devices": [
+    ],
+    "merge": 2,
+    "split": 0,
+    "op": "cat"
+  }
+}

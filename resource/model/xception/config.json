@@ -1,0 +1,247 @@
+{
+  "input_2": {
+    "class_name": "InputLayer",
+    "config": {
+      "dtype": "float32",
+      "batch_input_shape": [
+        null,
+        28,
+        28,
+        256
+      ],
+      "name": "input_2",
+      "sparse": false
+    },
+    "input_shape": [
+      28,
+      28,
+      256
+    ]
+  },
+  "input_3": {
+    "class_name": "InputLayer",
+    "config": {
+      "dtype": "float32",
+      "batch_input_shape": [
+        null,
+        28,
+        28,
+        128
+      ],
+      "name": "input_3",
+      "sparse": false
+    },
+    "input_shape": [
+      28,
+      28,
+      128
+    ]
+  },
+  "input_1": {
+    "class_name": "InputLayer",
+    "config": {
+      "dtype": "float32",
+      "batch_input_shape": [
+        null,
+        28,
+        28,
+        256
+      ],
+      "name": "input_1",
+      "sparse": false
+    },
+    "input_shape": [
+      28,
+      28,
+      256
+    ]
+  },
+  "conv2d_4": {
+    "class_name": "Conv2D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv2d_4",
+      "bias_regularizer": null,
+      "filters": 728,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        3,
+        3
+      ]
+    },
+    "input_shape": [
+      28,
+      28,
+      128
+    ]
+  },
+  "conv2d_1": {
+    "class_name": "Conv2D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv2d_1",
+      "bias_regularizer": null,
+      "filters": 728,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        1,
+        1
+      ]
+    },
+    "input_shape": [
+      28,
+      28,
+      256
+    ]
+  },
+  "conv2d_3": {
+    "class_name": "Conv2D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv2d_3",
+      "bias_regularizer": null,
+      "filters": 728,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        1,
+        1
+      ]
+    },
+    "input_shape": [
+      28,
+      28,
+      256
+    ]
+  },
+  "conv2d_2": {
+    "class_name": "Conv2D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv2d_2",
+      "bias_regularizer": null,
+      "filters": 364,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        3,
+        3
+      ]
+    },
+    "input_shape": [
+      28,
+      28,
+      728
+    ]
+  }
+}
