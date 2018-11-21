@@ -157,7 +157,7 @@ class Node:
                 with self.graph.as_default():
                     output = self.model.predict(np.array([X]))
                     if self.op == 'split':
-                        outputs = np.split(output, self.split, axis=1)
+                        outputs = np.split(output, self.split, axis=-1)
                         for i in range(self.split):
                             Thread(target=self.send, args=(outputs[i],)).start()
                     else:
