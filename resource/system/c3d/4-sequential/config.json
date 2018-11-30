@@ -1,0 +1,48 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "112 112 16 3",
+    "interval": "0.1"
+  },
+  "n2": {
+    "model": [
+      "conv3d_1",
+      "max_pooling3d_1"
+    ],
+    "devices": [
+      "n3"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "conv3d_2",
+      "max_pooling3d_2"
+    ],
+    "devices": [
+      "n4"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n4": {
+    "model": [
+      "conv3d_3"
+    ],
+    "devices": [
+    ],
+    "merge": 1,
+    "split": 0,
+    "op": ""
+  },
+}
