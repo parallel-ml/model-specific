@@ -1,0 +1,35 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "28 28 256",
+    "interval": "0.06"
+  },
+  "n2": {
+    "model": [
+      "conv2d_5"
+    ],
+    "devices": [
+      "n3"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n3": {
+    "model": [
+      "conv2d_6"
+    ],
+    "devices": [
+    ],
+    "merge": 1,
+    "split": 0,
+    "op": ""
+  }
+}
