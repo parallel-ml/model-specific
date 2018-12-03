@@ -58,5 +58,12 @@
     "merge": 3,
     "split": 1,
     "op": "cat"
+  },
+   "n6": {
+    "model": [],
+    "devices": [],
+    "merge": 3,
+    "split": 1,
+    "op": "cat"
   }
 }
