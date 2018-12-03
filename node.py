@@ -109,6 +109,9 @@ class Node:
                     shape = list(model.input_shape[1:])
                     shape[-1] = shape[-1] / cls.instance.merge if cls.instance.op == 'cat' else shape[-1]
                     cls.instance.input_shape = tuple(shape)
+                if system_config['input_shape']:
+                    cls.instance.input_shape = ([int(entry) for entry in system_config['input_shape'].split(' ')])
+                    cls.instance.force_generate = True
 
         return cls.instance
 
@@ -129,7 +132,7 @@ class Node:
         self.frame_count = 0
         self.threads = deque([])
         self.run = True
-        self.sample_output_shape = None
+        self.force_generate = False
 
         Thread(target=self.inference).start()
 
@@ -178,12 +181,15 @@ class Node:
         datatype = np.uint8 if req['type'] == 8 else np.float32
 
         # adapt to merge layer
-        if not self.input_shape:
-            shape = tuple([int(entry) for entry in req['shape'].split(' ')])
+        if not self.force_generate:
+            if not self.input_shape:
+                shape = tuple([int(entry) for entry in req['shape'].split(' ')])
+            else:
+                shape = self.input_shape
+            X = np.fromstring(bytestr, datatype).reshape(shape)
         else:
-            shape = self.input_shape
+            X = np.random.random_sample(self.input_shape)
 
-        X = np.fromstring(bytestr, datatype).reshape(shape)
         self.input.enqueue(X)
         self.prepare_data += time.time() - start
 

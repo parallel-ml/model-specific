@@ -1,4 +1,25 @@
 {
+  "input_5": {
+    "class_name": "InputLayer",
+    "config": {
+      "dtype": "float32",
+      "batch_input_shape": [
+        null,
+        56,
+        56,
+        16,
+        22
+      ],
+      "name": "input_5",
+      "sparse": false
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      22
+    ]
+  },
   "max_pooling3d_2": {
     "class_name": "MaxPooling3D",
     "config": {
@@ -72,6 +93,57 @@
       56,
       16,
       64
+    ]
+  },
+  "conv3d_7": {
+    "class_name": "Conv3D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv3d_7",
+      "bias_regularizer": null,
+      "filters": 128,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        3,
+        3,
+        3
+      ]
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      22
     ]
   },
   "conv3d_5": {
@@ -278,6 +350,27 @@
       128
     ]
   },
+  "input_4": {
+    "class_name": "InputLayer",
+    "config": {
+      "dtype": "float32",
+      "batch_input_shape": [
+        null,
+        56,
+        56,
+        16,
+        64
+      ],
+      "name": "input_4",
+      "sparse": false
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      64
+    ]
+  },
   "max_pooling3d_1": {
     "class_name": "MaxPooling3D",
     "config": {
@@ -415,6 +508,107 @@
       112,
       16,
       3
+    ]
+  },
+  "conv3d_6": {
+    "class_name": "Conv3D",
+    "config": {
+      "padding": "same",
+      "kernel_initializer": {
+        "class_name": "VarianceScaling",
+        "config": {
+          "distribution": "uniform",
+          "scale": 1.0,
+          "seed": null,
+          "mode": "fan_avg"
+        }
+      },
+      "name": "conv3d_6",
+      "bias_regularizer": null,
+      "filters": 43,
+      "bias_constraint": null,
+      "activation": "relu",
+      "trainable": true,
+      "data_format": "channels_last",
+      "kernel_constraint": null,
+      "strides": [
+        1,
+        1,
+        1
+      ],
+      "dilation_rate": [
+        1,
+        1,
+        1
+      ],
+      "kernel_regularizer": null,
+      "bias_initializer": {
+        "class_name": "Zeros",
+        "config": {}
+      },
+      "use_bias": true,
+      "activity_regularizer": null,
+      "kernel_size": [
+        3,
+        3,
+        3
+      ]
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      64
+    ]
+  },
+  "max_pooling3d_6": {
+    "class_name": "MaxPooling3D",
+    "config": {
+      "name": "max_pooling3d_6",
+      "trainable": true,
+      "data_format": "channels_last",
+      "pool_size": [
+        2,
+        2,
+        2
+      ],
+      "padding": "same",
+      "strides": [
+        2,
+        2,
+        2
+      ]
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      128
+    ]
+  },
+  "max_pooling3d_5": {
+    "class_name": "MaxPooling3D",
+    "config": {
+      "name": "max_pooling3d_5",
+      "trainable": true,
+      "data_format": "channels_last",
+      "pool_size": [
+        2,
+        2,
+        2
+      ],
+      "padding": "same",
+      "strides": [
+        2,
+        2,
+        2
+      ]
+    },
+    "input_shape": [
+      56,
+      56,
+      16,
+      43
     ]
   }
 }

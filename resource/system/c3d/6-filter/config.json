@@ -1,0 +1,72 @@
+{
+  "n1": {
+    "model": [
+    ],
+    "devices": [
+      "n2"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": "",
+    "input_shape": "112 112 16 3",
+    "interval": "0.6"
+  },
+  "n2": {
+    "model": [
+      "conv3d_1",
+      "max_pooling3d_1"
+    ],
+    "devices": [
+      "n3", "n4", "n5"
+    ],
+    "merge": 1,
+    "split": 3,
+    "op": ""
+  },
+  "n3": {
+    "input_shape": "56 56 16 22",
+    "model": [
+      "conv3d_7",
+      "max_pooling3d_6"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n4": {
+    "input_shape": "56 56 16 22",
+    "model": [
+      "conv3d_7",
+      "max_pooling3d_6"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n5": {
+    "input_shape": "56 56 16 22",
+    "model": [
+      "conv3d_7",
+      "max_pooling3d_6"
+    ],
+    "devices": [
+      "n6"
+    ],
+    "merge": 1,
+    "split": 1,
+    "op": ""
+  },
+  "n6": {
+    "model": [],
+    "devices": [],
+    "merge": 3,
+    "split": 1,
+    "op": "add"
+  }
+}
