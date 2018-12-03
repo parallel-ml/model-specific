@@ -109,7 +109,7 @@ class Node:
                     shape = list(model.input_shape[1:])
                     shape[-1] = shape[-1] / cls.instance.merge if cls.instance.op == 'cat' else shape[-1]
                     cls.instance.input_shape = tuple(shape)
-                if system_config['input_shape']:
+                if 'input_shape' in system_config:
                     cls.instance.input_shape = ([int(entry) for entry in system_config['input_shape'].split(' ')])
                     cls.instance.force_generate = True
 
