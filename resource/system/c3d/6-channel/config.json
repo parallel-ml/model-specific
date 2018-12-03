@@ -55,7 +55,7 @@
     "devices": [
       "n6"
     ],
-    "merge": 3,
+    "merge": 1,
     "split": 1,
     "op": "cat"
   },
